@@ -1,12 +1,19 @@
-# Airt Language
+# Airt Language (Native Runtime)
 
-Airt is a production-oriented unified language runtime implemented in this repository.
+Airt is a standalone programming language with `.aa` source files, its own parser/evaluator, and a native CLI implemented in Go (no Node.js dependency).
 
-## Quick start
-- `npm install`
-- `npm link`
-- `airt run examples/app/main.aa`
-- `airt serve examples/app/main.aa`
-- `airt build examples/app/main.aa dist`
+## Install
+```bash
+go build -o airt ./cmd/airt
+```
 
-See `docs/AIRT_SPEC.md` for the language specification.
+## CLI
+```bash
+./airt run examples/app/main.aa
+./airt serve examples/app/main.aa
+./airt build examples/app/main.aa dist
+./airt validate examples/app/main.aa
+./airt format examples/app/main.aa
+```
+
+See `docs/AIRT_SPEC.md` for the full language specification.
