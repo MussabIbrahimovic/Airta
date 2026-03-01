@@ -1,0 +1,12 @@
+{
+  "entry": "examples/app/main.aa",
+  "buildDir": "dist",
+  "environments": {
+    "development": {
+      "AIRT_ENV": "development"
+    },
+    "production": {
+      "AIRT_ENV": "production"
+    }
+  }
+}

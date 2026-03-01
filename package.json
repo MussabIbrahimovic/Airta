@@ -1,0 +1,19 @@
+{
+  "name": "airt-lang",
+  "version": "0.1.0",
+  "description": "Airt programming language runtime and CLI",
+  "type": "commonjs",
+  "bin": {
+    "airt": "bin/airt.js"
+  },
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "lint": "node bin/airt.js validate examples/app/main.aa",
+    "format": "node bin/airt.js format examples/app/main.aa"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["language", "interpreter", "airt", "cli"],
+  "license": "MIT"
+}
