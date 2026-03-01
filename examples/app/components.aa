@@ -1,0 +1,5 @@
+component Layout(title, body)
+  return ui.element("html", {}, [ui.element("head", {}, [ui.element("title", {}, [ui.text(title)])]), ui.element("body", { style: { fontFamily: "sans-serif", margin: "2rem" } }, body)])
+end
+
+exports.Layout = Layout
